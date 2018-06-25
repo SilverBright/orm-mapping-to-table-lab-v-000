@@ -35,7 +35,7 @@ class Student
       VALUES (?,?)
       SQL
     DB[:conn].execute(sql, self.name, self.grade)
-    SELECT id FROM students FIRST
+    SELECT id FROM students LIMIT 1
   end
 
 
