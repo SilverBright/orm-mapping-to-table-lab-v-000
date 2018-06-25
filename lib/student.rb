@@ -36,7 +36,8 @@ class Student
       SQL
     DB[:conn].execute(sql, self.name, self.grade)
       sql = <<-SQL
-      SELECT id FROM students LIMIT 1
+      SELECT * FROM students
+      WHERE ID = 1
       SQL
   end
 
