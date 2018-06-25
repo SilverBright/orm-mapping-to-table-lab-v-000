@@ -35,10 +35,6 @@ class Student
       VALUES (?,?)
       SQL
     DB[:conn].execute(sql, self.name, self.grade)
-      sql = <<-SQL
-      SELECT * FROM students
-      WHERE ID = 1
-      SQL
   end
 
 
